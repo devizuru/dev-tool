@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\DevTool\Commands;
+namespace Dreamon\DevTool\Commands;
 
-use Botble\DevTool\Helper;
+use Dreamon\DevTool\Helper;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Console\PromptsForMissingInput;
 use Symfony\Component\Console\Attribute\AsCommand;

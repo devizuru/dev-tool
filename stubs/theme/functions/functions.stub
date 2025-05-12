@@ -1,9 +1,9 @@
 <?php
 
-use Botble\Media\Facades\RvMedia;
-use Botble\Theme\Facades\Theme;
-use Botble\Theme\Supports\ThemeSupport;
-use Botble\Theme\Typography\TypographyItem;
+use Dreamon\Media\Facades\RvMedia;
+use Dreamon\Theme\Facades\Theme;
+use Dreamon\Theme\Supports\ThemeSupport;
+use Dreamon\Theme\Typography\TypographyItem;
 
 register_page_template([
     'default' => __('Default'),

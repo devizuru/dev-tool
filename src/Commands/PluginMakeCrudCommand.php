@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\DevTool\Commands;
+namespace Dreamon\DevTool\Commands;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\DevTool\Commands\Abstracts\BaseMakeCommand;
-use Botble\DevTool\Commands\Concerns\HasSubModule;
-use Botble\DevTool\Helper;
-use Botble\PluginManagement\Commands\Concern\HasPluginNameValidation;
+use Dreamon\Base\Facades\BaseHelper;
+use Dreamon\DevTool\Commands\Abstracts\BaseMakeCommand;
+use Dreamon\DevTool\Commands\Concerns\HasSubModule;
+use Dreamon\DevTool\Helper;
+use Dreamon\PluginManagement\Commands\Concern\HasPluginNameValidation;
 use Illuminate\Contracts\Console\PromptsForMissingInput;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;

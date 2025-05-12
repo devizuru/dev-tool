@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\DevTool\Commands\Concerns;
+namespace Dreamon\DevTool\Commands\Concerns;
 
-use Botble\DevTool\Helper;
+use Dreamon\DevTool\Helper;
 
 use function Laravel\Prompts\search;
 use function Laravel\Prompts\select;
@@ -63,6 +63,6 @@ trait HasModuleSelector
             ->replace(DIRECTORY_SEPARATOR, '\\')
             ->afterLast('\\')
             ->studly()
-            ->prepend('Botble\\');
+            ->prepend('Dreamon\\');
     }
 }

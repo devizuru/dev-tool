@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\DevTool\Commands;
+namespace Dreamon\DevTool\Commands;
 
-use Botble\DevTool\Helper;
-use Botble\Theme\Facades\Theme;
-use Botble\Widget\Models\Widget;
+use Dreamon\DevTool\Helper;
+use Dreamon\Theme\Facades\Theme;
+use Dreamon\Widget\Models\Widget;
 use Exception;
 use Illuminate\Console\Command;
 use Illuminate\Console\ConfirmableTrait;

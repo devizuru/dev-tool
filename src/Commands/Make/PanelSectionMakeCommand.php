@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\DevTool\Commands\Make;
+namespace Dreamon\DevTool\Commands\Make;
 
-use Botble\DevTool\Commands\Abstracts\BaseMakeCommand;
-use Botble\DevTool\Commands\Concerns\HasModuleSelector;
-use Botble\DevTool\Helper;
+use Dreamon\DevTool\Commands\Abstracts\BaseMakeCommand;
+use Dreamon\DevTool\Commands\Concerns\HasModuleSelector;
+use Dreamon\DevTool\Helper;
 use Illuminate\Contracts\Console\PromptsForMissingInput;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;

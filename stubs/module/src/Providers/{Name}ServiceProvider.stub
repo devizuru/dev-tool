@@ -2,11 +2,11 @@
 
 namespace {Module}\Providers;
 
-use Botble\Base\Facades\DashboardMenu;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
+use Dreamon\Base\Facades\DashboardMenu;
+use Dreamon\Base\Supports\ServiceProvider;
+use Dreamon\Base\Traits\LoadAndPublishDataTrait;
 use {Module}\Models\{Name};
-use Botble\LanguageAdvanced\Supports\LanguageAdvancedManager;
+use Dreamon\LanguageAdvanced\Supports\LanguageAdvancedManager;
 
 class {Name}ServiceProvider extends ServiceProvider
 {

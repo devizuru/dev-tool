@@ -2,8 +2,8 @@
 
 namespace {Module}\Providers;
 
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
+use Dreamon\Base\Supports\ServiceProvider;
+use Dreamon\Base\Traits\LoadAndPublishDataTrait;
 {PluginServiceProviderImports}
 class {Name}ServiceProvider extends ServiceProvider
 {

@@ -1,10 +1,10 @@
 {
-    "name": "botble/{-name}",
+    "name": "dreamon/{-name}",
     "description": "{Name} package",
     "type": "package",
     "autoload": {
         "psr-4": {
-            "Botble\\{Name}\\": "src"
+            "Dreamon\\{Name}\\": "src"
         }
     },
     "require": {
@@ -12,7 +12,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Botble\\{Name}\\Providers\\{Name}ServiceProvider"
+                "Dreamon\\{Name}\\Providers\\{Name}ServiceProvider"
             ]
         }
     }

@@ -1,5 +1,5 @@
 {
-    "id": "botble/{-theme}",
+    "id": "dreamon/{-theme}",
     "name": "{Theme}",
     "namespace": "Theme\\{Theme}\\",
     "author": null,

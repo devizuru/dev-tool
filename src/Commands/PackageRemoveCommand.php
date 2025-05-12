@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\DevTool\Commands;
+namespace Dreamon\DevTool\Commands;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\Base\Supports\Helper;
-use Botble\DevTool\Helper as HelperDevTool;
+use Dreamon\Base\Facades\BaseHelper;
+use Dreamon\Base\Supports\Helper;
+use Dreamon\DevTool\Helper as HelperDevTool;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Console\PromptsForMissingInput;
 use Illuminate\Support\Facades\DB;
@@ -55,7 +55,7 @@ class PackageRemoveCommand extends Command implements PromptsForMissingInput
 
         $this->components->info('Removed package files successfully!');
 
-        $this->components->info(sprintf('Remove <comment>"botble/%s": "*@dev"</comment> to composer.json then run <comment>composer update</comment> to remove this package!', $package));
+        $this->components->info(sprintf('Remove <comment>"dreamon/%s": "*@dev"</comment> to composer.json then run <comment>composer update</comment> to remove this package!', $package));
 
         return true;
     }

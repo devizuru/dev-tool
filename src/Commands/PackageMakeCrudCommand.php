@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\DevTool\Commands;
+namespace Dreamon\DevTool\Commands;
 
-use Botble\DevTool\Commands\Abstracts\BaseMakeCommand;
-use Botble\DevTool\Commands\Concerns\HasSubModule;
-use Botble\DevTool\Helper;
+use Dreamon\DevTool\Commands\Abstracts\BaseMakeCommand;
+use Dreamon\DevTool\Commands\Concerns\HasSubModule;
+use Dreamon\DevTool\Helper;
 use Illuminate\Contracts\Console\PromptsForMissingInput;
 use Illuminate\Support\Str;
 use Symfony\Component\Console\Attribute\AsCommand;

@@ -1,31 +1,31 @@
 <?php
 
-namespace Botble\DevTool\Providers;
+namespace Dreamon\DevTool\Providers;
 
-use Botble\Base\Supports\ServiceProvider;
-use Botble\DevTool\Commands\LocaleCreateCommand;
-use Botble\DevTool\Commands\LocaleRemoveCommand;
-use Botble\DevTool\Commands\Make\ControllerMakeCommand;
-use Botble\DevTool\Commands\Make\FormMakeCommand;
-use Botble\DevTool\Commands\Make\ModelMakeCommand;
-use Botble\DevTool\Commands\Make\PanelSectionMakeCommand;
-use Botble\DevTool\Commands\Make\RequestMakeCommand;
-use Botble\DevTool\Commands\Make\RouteMakeCommand;
-use Botble\DevTool\Commands\Make\SettingControllerMakeCommand;
-use Botble\DevTool\Commands\Make\SettingFormMakeCommand;
-use Botble\DevTool\Commands\Make\SettingMakeCommand;
-use Botble\DevTool\Commands\Make\SettingRequestMakeCommand;
-use Botble\DevTool\Commands\Make\TableMakeCommand;
-use Botble\DevTool\Commands\PackageCreateCommand;
-use Botble\DevTool\Commands\PackageMakeCrudCommand;
-use Botble\DevTool\Commands\PackageRemoveCommand;
-use Botble\DevTool\Commands\PluginCreateCommand;
-use Botble\DevTool\Commands\PluginMakeCrudCommand;
-use Botble\DevTool\Commands\RebuildPermissionsCommand;
-use Botble\DevTool\Commands\TestSendMailCommand;
-use Botble\DevTool\Commands\ThemeCreateCommand;
-use Botble\DevTool\Commands\WidgetCreateCommand;
-use Botble\DevTool\Commands\WidgetRemoveCommand;
+use Dreamon\Base\Supports\ServiceProvider;
+use Dreamon\DevTool\Commands\LocaleCreateCommand;
+use Dreamon\DevTool\Commands\LocaleRemoveCommand;
+use Dreamon\DevTool\Commands\Make\ControllerMakeCommand;
+use Dreamon\DevTool\Commands\Make\FormMakeCommand;
+use Dreamon\DevTool\Commands\Make\ModelMakeCommand;
+use Dreamon\DevTool\Commands\Make\PanelSectionMakeCommand;
+use Dreamon\DevTool\Commands\Make\RequestMakeCommand;
+use Dreamon\DevTool\Commands\Make\RouteMakeCommand;
+use Dreamon\DevTool\Commands\Make\SettingControllerMakeCommand;
+use Dreamon\DevTool\Commands\Make\SettingFormMakeCommand;
+use Dreamon\DevTool\Commands\Make\SettingMakeCommand;
+use Dreamon\DevTool\Commands\Make\SettingRequestMakeCommand;
+use Dreamon\DevTool\Commands\Make\TableMakeCommand;
+use Dreamon\DevTool\Commands\PackageCreateCommand;
+use Dreamon\DevTool\Commands\PackageMakeCrudCommand;
+use Dreamon\DevTool\Commands\PackageRemoveCommand;
+use Dreamon\DevTool\Commands\PluginCreateCommand;
+use Dreamon\DevTool\Commands\PluginMakeCrudCommand;
+use Dreamon\DevTool\Commands\RebuildPermissionsCommand;
+use Dreamon\DevTool\Commands\TestSendMailCommand;
+use Dreamon\DevTool\Commands\ThemeCreateCommand;
+use Dreamon\DevTool\Commands\WidgetCreateCommand;
+use Dreamon\DevTool\Commands\WidgetRemoveCommand;
 
 class CommandServiceProvider extends ServiceProvider
 {
@@ -61,20 +61,20 @@ class CommandServiceProvider extends ServiceProvider
             ]);
         }
 
-        if (class_exists(\Botble\PluginManagement\Providers\PluginManagementServiceProvider::class)) {
+        if (class_exists(\Dreamon\PluginManagement\Providers\PluginManagementServiceProvider::class)) {
             $this->commands([
                 PluginCreateCommand::class,
                 PluginMakeCrudCommand::class,
             ]);
         }
 
-        if (class_exists(\Botble\Theme\Providers\ThemeServiceProvider::class)) {
+        if (class_exists(\Dreamon\Theme\Providers\ThemeServiceProvider::class)) {
             $this->commands([
                 ThemeCreateCommand::class,
             ]);
         }
 
-        if (class_exists(\Botble\Widget\Providers\WidgetServiceProvider::class)) {
+        if (class_exists(\Dreamon\Widget\Providers\WidgetServiceProvider::class)) {
             $this->commands([
                 WidgetCreateCommand::class,
                 WidgetRemoveCommand::class,

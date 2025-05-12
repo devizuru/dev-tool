@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\DevTool\Commands\Abstracts;
+namespace Dreamon\DevTool\Commands\Abstracts;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\DevTool\Helper;
+use Dreamon\Base\Facades\BaseHelper;
+use Dreamon\DevTool\Helper;
 use Carbon\Carbon;
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;

@@ -1,7 +1,7 @@
 <?php
 
-use Botble\Shortcode\View\View;
-use Botble\Theme\Theme;
+use Dreamon\Shortcode\View\View;
+use Dreamon\Theme\Theme;
 
 return [
 

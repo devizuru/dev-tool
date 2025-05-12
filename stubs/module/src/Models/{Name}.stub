@@ -2,9 +2,9 @@
 
 namespace {Module}\Models;
 
-use Botble\Base\Casts\SafeContent;
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Models\BaseModel;
+use Dreamon\Base\Casts\SafeContent;
+use Dreamon\Base\Enums\BaseStatusEnum;
+use Dreamon\Base\Models\BaseModel;
 
 class {Name} extends BaseModel
 {

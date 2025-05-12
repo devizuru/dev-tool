@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to `botble/dev-tool` will be documented in this file.
+All notable changes to `dreamon/dev-tool` will be documented in this file.
 
 ## 1.0.2 - 2024-03-14
 

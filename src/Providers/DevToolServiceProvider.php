@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\DevTool\Providers;
+namespace Dreamon\DevTool\Providers;
 
-use Botble\Base\Supports\ServiceProvider;
+use Dreamon\Base\Supports\ServiceProvider;
 
 class DevToolServiceProvider extends ServiceProvider
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\DevTool\Commands;
+namespace Dreamon\DevTool\Commands;
 
-use Botble\DevTool\Commands\Abstracts\BaseMakeCommand;
-use Botble\DevTool\Helper;
-use Botble\PluginManagement\Commands\Concern\HasPluginNameValidation;
+use Dreamon\DevTool\Commands\Abstracts\BaseMakeCommand;
+use Dreamon\DevTool\Helper;
+use Dreamon\PluginManagement\Commands\Concern\HasPluginNameValidation;
 use Illuminate\Contracts\Console\PromptsForMissingInput;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
@@ -263,7 +263,7 @@ class PluginCreateCommand extends BaseMakeCommand implements PromptsForMissingIn
         return [
             'id' => [
                 'label' => 'Please enter the plugin ID',
-                'placeholder' => 'E.g.: botble/example-plugin',
+                'placeholder' => 'E.g.: dreamon/example-plugin',
                 'required' => true,
             ],
             'name' => [
@@ -277,7 +277,7 @@ class PluginCreateCommand extends BaseMakeCommand implements PromptsForMissingIn
             ],
             'namespace' => [
                 'label' => 'Namespace:',
-                'default' => 'Botble/{PluginName}',
+                'default' => 'Dreamon/{PluginName}',
             ],
             'provider' => [
                 'label' => 'ServiceProvider:',
@@ -391,7 +391,7 @@ class PluginCreateCommand extends BaseMakeCommand implements PromptsForMissingIn
         }
 
         return PHP_EOL . str_repeat(' ', 12) . sprintf("if (defined('LANGUAGE_ADVANCED_MODULE_SCREEN_NAME')) {
-                \Botble\LanguageAdvanced\Supports\LanguageAdvancedManager::registerModule(%s::class, [
+                \Dreamon\LanguageAdvanced\Supports\LanguageAdvancedManager::registerModule(%s::class, [
                     'name',
                 ]);
             }", Str::studly($this->argument('name')));
@@ -424,7 +424,7 @@ class PluginCreateCommand extends BaseMakeCommand implements PromptsForMissingIn
             return null;
         }
 
-        $imports = ['Botble\Base\Facades\DashboardMenu'];
+        $imports = ['Dreamon\Base\Facades\DashboardMenu'];
 
         $imports[] = sprintf('%s\Models\%s', str_replace('\\\\', '\\', $this->argument('namespace')), Str::studly($this->argument('name')));
 

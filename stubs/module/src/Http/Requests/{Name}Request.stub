@@ -2,8 +2,8 @@
 
 namespace {Module}\Http\Requests;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Support\Http\Requests\Request;
+use Dreamon\Base\Enums\BaseStatusEnum;
+use Dreamon\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class {Name}Request extends Request

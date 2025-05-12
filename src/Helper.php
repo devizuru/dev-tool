@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\DevTool;
+namespace Dreamon\DevTool;
 
 class Helper
 {
